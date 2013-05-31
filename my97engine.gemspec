@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = My97engine::VERSION
   s.authors     = ["peterfei"]
   s.email       = ["peterfeispace@gmail.com"]
-  s.homepage    = "http://peterfei.com"
+  s.homepage    = "https://github.com/peterfei/my97_calender.git"
   s.summary     = "My97engine."
   s.description = "My97engine."
 
@@ -17,6 +17,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.13"
-
   s.add_development_dependency "sqlite3"
 end
