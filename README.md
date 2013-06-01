@@ -8,7 +8,7 @@ group :assets do
     gem 'my97engine'
 end
 ```
-**Step 1**
+**Step 2**
 ```
 Run 'bundle install'
 ```
