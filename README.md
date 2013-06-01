@@ -28,5 +28,6 @@ Require `WdatePicker.css` in your CSS manifest (e.g. `application.css`)
     <input type="text" class="Wdate" value="" name="test" onFocus="WdatePicker({isShowClear:false,readOnly:true})" />
 ```
 ##Enjoy!!!
-![](http://l.ruby-china.org/photo/062cefeb8d6e789bb8331a55e6abd0f2.png)
+![](http://l.ruby-china.org/photo/f1328a8b7a2e874c95105f5777f89838.png)
+
 --peterfei
