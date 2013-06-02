@@ -1,11 +1,11 @@
-#My97 Calender 
+#My97-rails
 ## Installation
 **Step 1**
-Load `my97engine` in your `Gemfile` as part of the `assets` group
+Load `my97-rails` in your `Gemfile` as part of the `assets` group
 
 ```
 group :assets do 
-    gem 'my97engine'
+    gem 'my97-rails'
 end
 ```
 **Step 2**
