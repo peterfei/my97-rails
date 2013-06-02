@@ -107,15 +107,15 @@ module My97FormBuilder
          def my97_datetime_select(field,options ={})
              id = get_object_id(field, options)
              #options[:class]="Wdate"
-             date = 
-                 if options['start_date']
-                     options['start_date']
+             datetime = 
+                 if options['start_time']
+                     options['start_time']
                  elsif object.nil?
-                     Date.now
+                     DateTime.now
                  else
                      object.send(field.to_sym)
                  end
-             date_picker_script = "<script type='text/javascript'>" +
+             datetime_picker_script = "<script type='text/javascript'>" +
                  "$('##{id}')" +
                  ".focus( function() {
                            var options;
@@ -125,7 +125,7 @@ module My97FormBuilder
                                      };
                               return WdatePicker($.extend(options, $(this).data()));
                              });" +"</script>"
-             return basic_datetime_select(field, options.merge(javascript: date_picker_script))
+             return basic_datetime_select(field, options.merge(javascript: datetime_picker_script))
          end
          def basic_datetime_select(field, options = {})
              placeholder_text = options[:placeholder_text] || ''
