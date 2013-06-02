@@ -1,0 +1,20 @@
+module My97_form_build
+  module FormHelper
+    [:form_for, :fields_for,:simple_form_for].each do |method|
+      module_eval do
+        define_method "bootstrap_#{method}" do |record, *args, &block|
+          # add the TwitterBootstrap builder to the options
+          options           = args.extract_options!
+          options[:builder] = BootstrapFormBuilder::FormBuilder
+ 
+          if method == :form_for
+            options[:html] ||= {}
+            options[:html][:class] ||= 'form-horizontal'
+          end
+ 
+          # call the original method with our overridden options
+          send method, record, *(args << options), &block
+        end
+      end
+    end
+end

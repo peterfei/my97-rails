@@ -1,3 +1,4 @@
+
 module My97engine
   class Engine < ::Rails::Engine
     initializer 'my97engine.load_my97engine' do |app|
@@ -5,4 +6,3 @@ module My97engine
     end
   end
 end
-
